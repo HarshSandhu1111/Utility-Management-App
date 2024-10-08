@@ -1,0 +1,162 @@
+.main{
+height: 100px;
+width: 100%;
+display: flex;
+background-color:rgb(255, 251, 251);
+gap: 5rem;
+
+}
+
+.main img{
+    height: 70px;
+    width: 70px;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+l
+ a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+display: flex;  
+gap: 2.5rem;
+
+}
+  
+ul li{
+    margin-top: 1.5rem;
+}
+
+  
+
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    height: 15px;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    margin-top: 1.5rem;
+    margin-left: 10rem;
+  }
+
+  .search-input:focus {
+    border-color: #0066cc;
+    outline: none;
+  }
+
+  /* Placeholder animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .search-input::placeholder {
+    animation: slideIn 1s ease-out;
+  }
+
+  a {
+    color: #262c33;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+
+  /* Animation keyframes */
+  @keyframes clickAnimation {
+    0% {
+      transform: scale(1);
+      color: #3e2323;
+    }
+    50% {
+      transform: scale(1.2);
+      color: #1f1611;
+    }
+    100% {
+      transform: scale(1);
+      color: #24303c;
+    }
+  }
+
+
+
+  .hline { width:100%; height:.5px; background: #fff }
+
+  .iconf{
+    margin-top: 5px;
+    display: flex;
+  }
+
+  .iconf p{
+    margin-left: 1rem;
+    margin-top: 32px;
+   
+  }
+
+  .iconf i{
+    font-size: 22px;
+  }
+
+  .icons{
+    display: flex;
+
+  }
+
+  .icons i{
+    margin-top: 30px;
+    margin-left: 8px;
+  }
+
+
+  .icont{
+    display: flex;
+
+  }
+
+  .icont i{
+    margin-top: 32px;
+    margin-left: 10px;
+    font-size: 13px;
+  }
+
+
+  a {
+    text-decoration: none;
+    color: #1f1e1e;
+    font-size: 24px;
+    position: relative;
+  }
+
+  a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #040404;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .active{
+    color: rgb(5, 5, 184);
+  }
+   
+i{
+  font-size: 100px;
+}
+  

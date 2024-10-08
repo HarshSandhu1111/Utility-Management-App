@@ -1,0 +1,121 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-left: 30rem;
+  margin-top: 3rem;
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.input-group {
+  position: relative;
+  margin-top: 10px;
+  margin-right: 29px;
+}
+
+.input-group i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6e8efb;
+  font-size: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  color: #6e8efb;
+  text-decoration: none;
+}
+
+
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #a777e3, #6e8efb);
+}
+
+.social-login {
+  margin: 20px 0;
+}
+
+.social-login p {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icon i{
+  text-decoration: none;
+  color: white;
+  background: #6e8efb;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.social-icon:hover {
+  background: #a777e3;
+}
+
+.signup-link {
+  margin-top: 20px;
+}
+
+.signup-link p {
+  margin-bottom: 10px;
+}
+
+.signup-link a {
+  color: #6e8efb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+

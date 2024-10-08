@@ -1,0 +1,141 @@
+
+
+
+.SMain{
+height: 300px;
+width: 440px;
+margin-left: 10rem;
+margin-top: 3rem;
+
+border-radius: 12px;
+}
+
+.s1{
+
+height: 60px;
+width: 60px;
+border-radius: 50%;
+position: absolute;
+margin: 18px;
+}
+.s1 img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.s2{
+    
+    height: 22px;
+    width: 210px;
+    position: absolute;
+    margin-left: 120px;
+    
+}
+
+.s3{
+ 
+    height: 12px;
+    width: 260px;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 40px;
+}
+
+.container-s{
+    gap: 5rem;
+    
+    width: 1300px;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.s4{
+    height: 12px;
+    width: 260px;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 80px;
+}
+
+/* h4{
+    margin-top :130px ;
+    margin-left: 120px;
+} */
+
+.Sbutton0 i {
+    font-size: 20px;
+
+}
+.Sbutton0{
+    margin-left: 270px;
+    margin-top: 45px;
+    background-color: rgba(107, 173, 64, 0.858);
+    height: 30px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+
+
+.Sbutton1{
+    
+    margin-left: 100px;
+    cursor: pointer;
+   
+} 
+
+
+.Sbutton1 i {
+    font-size: 35px;
+    position: absolute;
+margin-left: -20px;
+
+
+}
+
+.Sbutton2 i {
+    font-size: 35px;
+
+}
+.Sbutton2{
+    margin-left: 200px;
+    cursor: pointer;
+    
+} 
+
+.rating i{
+    font-size: 12px;
+    margin-top: 27px;
+}
+
+.rating{
+    display: flex;
+    margin-top: 120px;
+    margin-left: 120px;
+    height: 30px;
+    width: 130px;
+    gap: 10px;
+}
+
+
+
+.Sbutton3{
+    margin-left: 130px;
+    position: absolute;
+    margin-top: 30px;
+    background-color: rgb(37, 43, 122);
+    color: white;
+    
+    border-radius: 10px;
+    width: 130px;
+cursor: pointer;
+}
+
+.Sbutton3 h3{
+padding-left: 6px;
+}
