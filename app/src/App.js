@@ -10,6 +10,7 @@ import Allservices from './Allservices';
 import LocationPermission from './LocationPermission';
 import Saloon from './Saloon';
 import Maps from './Maps';
+import Signup from './Signup';
 
 
 
@@ -30,6 +31,8 @@ function App() {
   <Route path='/locationpermission' element={<LocationPermission/>} />
   <Route path='/saloon' element={<Saloon/>} />
   <Route path='/Maps' element={<Maps  />
+} />
+<Route path='/signup' element={<Signup  />
 } />
 
       </Routes>
