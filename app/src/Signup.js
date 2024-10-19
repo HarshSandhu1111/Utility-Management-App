@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import './Signup.css'; // Assuming you have the CSS file in the same directory
 import { useNavigate } from 'react-router-dom';
-
-function SignupForm() {
+import axios from "axios";
+function Signup() {
   // Define state for name, email, and password
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -10,8 +10,15 @@ function SignupForm() {
 const navigate = useNavigate()
   // Handle form submission
   const handleSubmit = (e) => {
-    e.preventDefault();
-
+    e.preventDefault()
+    axios.post('http://localhost:5000/signup', { name, email, password })
+    .then(result => {
+      console.log(result);
+    })
+    .catch(error => {
+      console.error(error);
+    });
+  
     // Simple validation example
     if (!name || !email || !password) {
       alert("Please fill out all fields.");
@@ -21,7 +28,7 @@ const navigate = useNavigate()
     // Mock sign-up logic (you can replace this with actual API call)
     alert(`Sign up successful! Name: ${name}, Email: ${email}`);
     navigate('/login');
-  };
+  }
 
   return (
     
@@ -75,4 +82,4 @@ const navigate = useNavigate()
   );
 }
 
-export default SignupForm;
+export default Signup;

@@ -1,5 +1,7 @@
 const user = require("../models/user");
 
+const productdata = require("../MOCK_DATA.json");
+
 async function handlesignup(req, res) {
   const { name, email, password } = req.body;
   try {
@@ -37,7 +39,10 @@ async function handlelogin (req,res) {
 
 } 
 
+
+
 module.exports ={
     handlesignup,
-    handlelogin
+    handlelogin,
+    
 }
