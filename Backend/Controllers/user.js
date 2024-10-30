@@ -1,6 +1,6 @@
 const user = require("../models/user");
 
-const productdata = require("../MOCK_DATA.json");
+const Provider = require("../models/data");
 
 async function handlesignup(req, res) {
   const { name, email, password } = req.body;
@@ -39,10 +39,43 @@ async function handlelogin (req,res) {
 
 } 
 
+async function checkAvailability(req, res) {
+  const { id } = req.params;
+  const numericId = parseInt(id); 
+  console.log("Received ID:", numericId);
+
+
+  try {
+      const provider = await Provider.findOne({ id: numericId });
+      console.log("Provider found:", provider); 
+
+      if (!provider) {
+          return res.status(404).json({ message: "Provider not found" });
+      }
+
+      const isAvailable = provider.is_available_today;
+
+      res.json({
+          providerId: provider._id,
+          isAvailable,
+          providerDetails: {
+              firstName: provider.first_name,
+              lastName: provider.last_name,
+              address: provider.address,
+              phone: provider.phone,
+          },
+      });
+  } catch (error) {
+      console.error("Error checking provider availability:", error);
+      res.status(500).json({ message: "Server error" });
+  }
+}
+
 
 
 module.exports ={
     handlesignup,
     handlelogin,
+    checkAvailability,
     
 }

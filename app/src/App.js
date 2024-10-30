@@ -11,6 +11,7 @@ import LocationPermission from './LocationPermission';
 import Saloon from './Saloon';
 import Maps from './Maps';
 import Signup from './Signup';
+import Bookings from './Bookings';
 
 
 
@@ -34,6 +35,10 @@ function App() {
 } />
 <Route path='/signup' element={<Signup  />
 } />
+
+<Route path='/bookings' element={<Bookings  />
+} />
+
 
       </Routes>
       </BrowserRouter>

@@ -1,0 +1,70 @@
+
+.Booking-main-div{
+    background-color: #f0f0f0;
+    height: 500px;
+    width: 350px;
+    margin-left: 34rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px ;
+}
+
+.Booking-main-div h3{
+    margin-left: 20px;
+    padding-top: 20px;
+    color: rgb(42, 39, 39);
+}
+
+.Booking-main-div-p1{
+    margin-top: 30px;
+    display: flex;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.Booking-main-div-p1 input{
+   border-radius: 15px;
+}
+
+.Booking-main-div-p2{
+    display: flex;
+    gap: 5px;
+    margin-left: 12px;
+}
+
+.Booking-main-div-p2 input{
+    border-radius: 15px;
+    margin-top: 14px;
+    height: 42px;
+    margin-left: 6px;
+}
+
+.checkbutton{
+    margin-left: 59px;
+    margin-top: 40px;
+    font-size: 20px;
+    border: 1px solid black;
+    width: 220px;
+    padding-left: 35px;
+    padding-top: 10px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(47, 69, 62);
+    cursor: pointer;
+}
+
+
+.Add-button{
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size: 20px;
+    border: 1px solid black;
+    width: 180px;
+    padding-left: 45px;
+    padding-top: 10px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(47, 69, 62);
+    cursor: pointer;
+}

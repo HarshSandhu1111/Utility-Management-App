@@ -1,5 +1,5 @@
 const express = require("express");
-const { handlesignup, handlelogin } = require("../Controllers/user");
+const { handlesignup, handlelogin, checkAvailability } = require("../Controllers/user");
 
 const router =  express.Router();
 
@@ -8,6 +8,9 @@ router.get("/",(req,res) =>{
    res.send("Hello World");
 })
 router.post('/login',handlelogin);
+
+
+router.get('/check_available/:id',checkAvailability);
 
 
 
