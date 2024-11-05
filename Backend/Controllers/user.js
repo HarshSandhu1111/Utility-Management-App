@@ -41,6 +41,7 @@ async function handlelogin (req,res) {
 
 async function checkAvailability(req, res) {
   const { id } = req.params;
+  console.log(id);
   const numericId = parseInt(id); 
   console.log("Received ID:", numericId);
 

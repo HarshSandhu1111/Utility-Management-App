@@ -9,7 +9,7 @@ const PORT =  6000;
 
 const start  = async () =>{
     try{
-        mongoose.connect("mongodb://localhost:27017/JSON", {
+        mongoose.connect("mongodb://localhost:27017/Signup", {
  
         }).then(() => {
           console.log("Connected to MongoDB");

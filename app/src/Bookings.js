@@ -1,10 +1,14 @@
 import React from 'react'
 import './Bookings.css';
-import { useLocation } from 'react-router-dom';
+import { useLocation ,useNavigate} from 'react-router-dom';
 const Bookings = () => {
     const location = useLocation();
     const data= location.state;
+    const navigate = useNavigate();
 
+    const navigatetoCheck = () =>{
+      navigate('/check_available',{state:data});
+    }
     
   return (
     <div>
@@ -22,8 +26,8 @@ const Bookings = () => {
             
             
 
-            <div className='checkbutton'><btn>Check Availablitity</btn></div>
-            <div className='Add-button'><btn>Add Booking</btn></div>
+            <div  onClick={navigatetoCheck} className='checkbutton'><btn>Check Availablitity</btn></div>
+            <div className='Add-button'><btn >Add Booking</btn></div>
             
 
             

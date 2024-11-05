@@ -12,6 +12,7 @@ import Saloon from './Saloon';
 import Maps from './Maps';
 import Signup from './Signup';
 import Bookings from './Bookings';
+import CheckAvailability from './CheckAvailability';
 
 
 
@@ -39,6 +40,8 @@ function App() {
 <Route path='/bookings' element={<Bookings  />
 } />
 
+<Route path='/check_available' element={<CheckAvailability  />
+} />
 
       </Routes>
       </BrowserRouter>
