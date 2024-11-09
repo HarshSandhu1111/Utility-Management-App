@@ -1,15 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Bookings.css';
 import { useLocation ,useNavigate} from 'react-router-dom';
+
 const Bookings = () => {
+
     const location = useLocation();
     const data= location.state;
     const navigate = useNavigate();
+    const[date,setdate]=useState("");
 
     const navigatetoCheck = () =>{
       navigate('/check_available',{state:data});
     }
-    
+    const navigatetoBook = () =>{
+      navigate('/bookingstatus',{state:data});
+      console.log(data);
+      
+    }
   return (
     <div>
        
@@ -26,8 +33,7 @@ const Bookings = () => {
             
             
 
-            <div  onClick={navigatetoCheck} className='checkbutton'><btn>Check Availablitity</btn></div>
-            <div className='Add-button'><btn >Add Booking</btn></div>
+            <div onClick={navigatetoBook} className='Add-button'><btn >Add Booking</btn></div>
             
 
             

@@ -16,12 +16,11 @@ function Saloon() {
     // Handle booking function
     const handleAddBooking = (id) => {
         console.log("Booking for provider with id:", id);
-        navigate('/bookings',{state:id});
+        navigate('/bookingstatus',{state:id});
     };
 
     return (
         <div className="container-s">
-            <h1>Our Salons</h1>
             {records.map((record, index) => (
                 <div key={record.id} className="SMain" style={myStyle}>
                     <div className="s1">

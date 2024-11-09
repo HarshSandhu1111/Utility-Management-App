@@ -12,7 +12,7 @@ import Saloon from './Saloon';
 import Maps from './Maps';
 import Signup from './Signup';
 import Bookings from './Bookings';
-import CheckAvailability from './CheckAvailability';
+import Addbooking from './Addbooking';
 
 
 
@@ -40,8 +40,11 @@ function App() {
 <Route path='/bookings' element={<Bookings  />
 } />
 
-<Route path='/check_available' element={<CheckAvailability  />
+
+
+<Route path='/BookingStatus' element={<Addbooking  />
 } />
+
 
       </Routes>
       </BrowserRouter>

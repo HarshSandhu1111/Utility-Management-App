@@ -68,17 +68,6 @@ margin: 18px;
     font-size: 20px;
 
 }
-.Sbutton0{
-    margin-left: 270px;
-    margin-top: 45px;
-    background-color: rgba(107, 173, 64, 0.858);
-    height: 30px;
-    width: 100px;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-
-}
 
 
 
@@ -102,8 +91,10 @@ margin-left: -20px;
     font-size: 35px;
 
 }
-.Sbutton2{
+.Sbutton2 button{
     margin-left: 200px;
+    border: none;
+    
     cursor: pointer;
     
 } 
@@ -140,3 +131,14 @@ cursor: pointer;
 padding-left: 6px;
 }
 
+.Sbutton0 button{
+    margin-left: 270px;
+    margin-top: 45px;
+    background-color: rgba(107, 173, 64, 0.858);
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
