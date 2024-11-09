@@ -2,17 +2,17 @@
 import './App.css';
 import Nav from './Nav';
 import Body from './Body';
-import Login from './Login';
+import Login from './Navbar/Login.js';
 import React from 'react';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import Location from './Location';
+import Location from './Navbar/Location.js';
 import Allservices from './Allservices';
-import LocationPermission from './LocationPermission';
-import Saloon from './Saloon';
-import Maps from './Maps';
-import Signup from './Signup';
-import Bookings from './Bookings';
-import Addbooking from './Addbooking';
+import LocationPermission from './Navbar/LocationPermission.js';
+import Saloon from './Saloon.js';
+import Maps from './Navbar/Maps.js';
+import Signup from './Navbar/Signup.js';
+import Bookings from './Saloon/Bookings';
+import Addbooking from './Saloon/Addbooking';
 
 
 

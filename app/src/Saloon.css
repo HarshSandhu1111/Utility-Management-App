@@ -94,7 +94,7 @@ margin-left: -20px;
 .Sbutton2 button{
     margin-left: 200px;
     border: none;
-    
+    mix-blend-mode: color-burn;
     cursor: pointer;
     
 } 
